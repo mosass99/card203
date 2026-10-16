@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>كرت أفراح — العريس أيهم</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- popup ترحيبي -->
+<div class="welcome-overlay" id="welcomeOverlay">
+  <div class="welcome-box">
+    <div class="welcome-icon">🎊</div>
+    <p class="welcome-title">أهلاً وسهلاً بك</p>
+    <p class="welcome-msg">يسعدنا تشريفك دعوتنا<br/>نتمنى لك مشاركة جميلة في فرحتنا</p>
+    <p class="welcome-sub">✦ حفل زفاف العريس أيهم خليل أبو حسان ✦</p>
+    <button class="welcome-close" id="welcomeClose">دخول 💛</button>
+  </div>
+</div>
+
+<!-- خلفية النجوم -->
+<div class="stars" id="stars"></div>
+
+<!-- canvas الألعاب النارية -->
+<canvas id="fireworks-canvas"></canvas>
+
+<!-- شريط إعلاني 24 ساعة -->
+<div class="ticker-wrap">
+  <div class="ticker-track" id="ticker"></div>
+</div>
+
+<!-- الصفحة الرئيسية -->
+<div class="page">
+  <div class="card">
+    <div class="card-shine"></div>
+
+    <!-- أيقونة -->
+    <div class="icon-wrap">
+      <span class="rings">💍</span>
+    </div>
+
+    <!-- بسم الله -->
+    <p class="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ</p>
+
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-diamond"></div>
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- الوالد -->
+    <p class="father-text">يتشرف بدعوتكم</p>
+    <p class="father-name">والد العريس الحاج خليل أبو حسان</p>
+
+    <!-- العريس -->
+    <p class="groom-label">✦ لحضور حفل زفاف نجله العزيز ✦</p>
+    <h1 class="groom-name">أيهم</h1>
+
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-diamond"></div>
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- رسالة ترحيب -->
+    <p class="message">
+      أهلاً وسهلاً بكم جميعاً<br/>
+      تشرفنا بدعوتكم لمشاركتنا أجمل لحظات الفرح والسرور<br/>
+      <strong style="color:var(--gold-shine);">ننتظركم 🤍</strong>
+    </p>
+
+    <!-- تفاصيل -->
+    <div class="details-grid">
+      <div class="detail-box">
+        <div class="dicon">📍</div>
+        <div class="dlabel">المنطقة</div>
+        <div class="dvalue">مادبا — الحي الشرقي</div>
+      </div>
+      <div class="detail-box">
+        <div class="dicon">📅</div>
+        <div class="dlabel">الموعد</div>
+        <div class="dvalue">سيُحدد قريباً — ترقبونا</div>
+      </div>
+      <div class="detail-box">
+        <div class="dicon">🎩</div>
+        <div class="dlabel">الكود</div>
+        <div class="dvalue">رسمي ذهبي</div>
+      </div>
+      <div class="detail-box">
+        <div class="dicon">🕊</div>
+        <div class="dlabel">الأجواء</div>
+        <div class="dvalue">فرح وبهجة وسرور</div>
+      </div>
+    </div>
+
+    <!-- عداد تنازلي -->
+    <p class="countdown-title">⏳ العد التنازلي — ترقبوا الموعد</p>
+    <div class="countdown">
+      <div class="count-box"><span class="count-num" id="cd-d">--</span><div class="count-label">يوم</div></div>
+      <div class="count-box"><span class="count-num" id="cd-h">--</span><div class="count-label">ساعة</div></div>
+      <div class="count-box"><span class="count-num" id="cd-m">--</span><div class="count-label">دقيقة</div></div>
+      <div class="count-box"><span class="count-num" id="cd-s">--</span><div class="count-label">ثانية</div></div>
+    </div>
+
+    <!-- تهاني -->
+    <div class="congrats-row" id="congrats"></div>
+
+
+
+    <!-- بطاقة التواصل -->
+    <div class="contact-card">
+      <div class="ctitle">☎ رقم التواصل مع العريس</div>
+      <span class="cnum">0775884464</span>
+    </div>
+
+    <!-- فوتر -->
+    <div class="footer">
+      🌙 أهلاً وسهلاً — بالرفاء والبنين للعريس أيهم 🌙
+    </div>
+
+    <!-- علامة تجارية -->
+    <div class="brand-sig">
+      <div class="brand-line"></div>
+      <div class="brand-content">
+        <span class="brand-icon">✦</span>
+        <div class="brand-text">
+          <span class="brand-from">تصميم وإهداء من</span>
+          <span class="brand-name">مصعب الخريشا</span>
+          <span class="brand-to">إلى العريس الغالي</span>
+          <span class="brand-groom">أيهم خليل أبو حسان</span>
+        </div>
+        <span class="brand-icon">✦</span>
+      </div>
+      <div class="brand-line"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- زر الألعاب النارية -->
+<button class="fireworks-btn" id="fw-btn" title="تشغيل الألعاب النارية">🎆</button>
+
+<script src="main.js"></script>
+</body>
+</html>
